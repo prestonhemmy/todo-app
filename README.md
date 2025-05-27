@@ -26,7 +26,7 @@ npm start
 
 ## Screenshots
 ![example page](public/readme_images/init.jpg)
-The application sports a modern look and feel with responsive sections for 'In Progress' and 'Completed' which are visible if tasks are present, minimal styled pop-up windows and smooth animations.
+The application sports a modern look and feel with responsive sections for 'In Progress' and 'Completed' visible only if tasks are present, minimal styled pop-up windows and smooth animations.
 
 ![checkbox in checking state](public/readme_images/checking_box.jpg)
 ![checkbox in checked state](public/readme_images/checked_box.jpg)
