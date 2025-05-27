@@ -1,28 +1,14 @@
-<div 
-style="display: flex;
-align-items: flex-start; 
-gap: 20px; 
-margin-bottom: 20px;">
-  <div style="flex: 1;">
-    <h1>React Todo App</h1>
-    <p>A clean and modern todo list application built with React and CSS.</p>
-    <h2>Features</h2>
-    <ul>
-      <li>✅ Add, edit, and delete tasks</li>
-      <li>📝 Show task descriptions</li>
-      <li>🎨 Light/Dark mode support (defaulting to system)</li>
-      <li>💾 Local storage persistence  <!-- Is it? --></li>
-      <li>🎯 Smooth animations</li>
-      <li>📱 Responsive design</li>
-    </ul>
-  </div>
-  <div style="flex-shrink: 0;">
-    <img 
-        src="public/readme_images/logo.jpeg" 
-        alt="todo app logo" 
-        style="max-width: 200px; height: auto;">
-  </div>
-</div>
+# React Todo App
+
+A clean and modern todo list application built with React and CSS.
+
+## Features
+- ✅ Add, edit, and delete tasks
+- 📝 Show task descriptions
+- 🎨 Light/Dark mode support (defaulting to system)
+- 💾 Local storage persistence
+- 🎯 Smooth animations
+- 📱 Responsive design
 
 ## Technologies
 - React 19.1
