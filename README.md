@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+<div 
+style="display: flex;
+align-items: flex-start; 
+gap: 20px; 
+margin-bottom: 20px;">
+  <div style="flex: 1;">
+    <h1>React Todo App</h1>
+    <p>A clean and modern todo list application built with React and CSS.</p>
+    <h2>Features</h2>
+    <ul>
+      <li>✅ Add, edit, and delete tasks</li>
+      <li>📝 Show task descriptions</li>
+      <li>🎨 Light/Dark mode support (defaulting to system)</li>
+      <li>💾 Local storage persistence  <!-- Is it? --></li>
+      <li>🎯 Smooth animations</li>
+      <li>📱 Responsive design</li>
+    </ul>
+  </div>
+  <div style="flex-shrink: 0;">
+    <img 
+        src="public/readme_images/logo.jpeg" 
+        alt="todo app logo" 
+        style="max-width: 200px; height: auto;">
+  </div>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies
+- React 19.1
+- CSS Modules
+- CSS Variables for theming
 
-## Available Scripts
+## Installation
+```
+bash
+git clone https://github.com/yourusername/react-todo-app.git
+cd react-todo-app
+npm install
+npm start
+```
 
-In the project directory, you can run:
+## Screenshots
+![example page](public/readme_images/init.jpg)
+The application sports a modern look and feel with responsive sections for 'In Progress' and 'Completed' which are visible if tasks are present, minimal styled pop-up windows and smooth animations.
 
-### `npm start`
+![checkbox in checking state](public/readme_images/checking_box.jpg)
+![checkbox in checked state](public/readme_images/checked_box.jpg)
+Easy to use checkboxes automatically transfer your task from 'In Progress' to 'Completed', applying a strikethrough and grayed-out effect.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![add task pop-up](public/readme_images/add_task.jpg)
+![task description pop-up](public/readme_images/task_description.jpg)
+![edit task pop-up](public/readme_images/edit_task.jpg)
+![delete task pop-up](public/readme_images/delete_task.jpg)
+Minimal styled pop-up windows for creating a new task, seeing a given task's description, editing a task and deleting a task offer a focused view for seeing information and making changes corresponding to a single task.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
