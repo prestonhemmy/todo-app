@@ -1,0 +1,81 @@
+.primary {
+  background-color: #4da4fb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary:hover {
+  background-color: #4797e7;
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--text-gray);
+  border: 1px solid var(--border-color-input);
+  border-radius: 5px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.secondary:hover {
+  background-color: var(--bg-button-hover);
+}
+
+.edit {
+  background-color: transparent;
+  color: var(--text-gray);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 2px 8px;
+}
+
+.edit:hover {
+  color: var(--text-placeholder);
+}
+
+.delete {
+  background-color: transparent;
+  color: #ef4444;
+  border: none;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete:hover {
+  color: #fd7272;
+}
+
+.deleteConfirm {
+  background-color: #ef4444;
+  color: white;
+  border: 1px solid var(--border-color-input);
+  border-radius: 5px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.deleteConfirm:hover {
+  background-color: #fd7272;
+}
+
+.clearAll {
+  background-color: transparent;
+  color: var(--text-gray);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+}
+
+.clearAll:hover {
+  color: var(--text-placeholder);
+}

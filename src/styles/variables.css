@@ -1,0 +1,43 @@
+/* Light Mode (default) */
+:root {
+  --bg-primary: hsl(0, 0%, 100%);
+  --bg-secondary: hsl(20, 10.3%, 94.3%);
+  --bg-secondary-hover: hsl(20, 10.3%, 90%);
+  --bg-button-hover: hsl(20, 10.3%, 96.45%);
+  --text-primary: #333;
+  --text-secondary: #555;
+  --text-muted: #6b7280;
+  --text-gray: gray;
+  --text-placeholder: #999;
+  --border-color: #eee;
+  --border-color-input: #ddd;
+  --modal-overlay: rgba(0, 0, 0, 0.3);
+  --scrollbar-track: #f1f1f1;
+  --scrollbar-thumb: #888;
+  --scrollbar-thumb-hover: #555;
+  --fade-gradient-start: rgba(255, 255, 255, 0);
+  --fade-gradient-end: rgba(255, 255, 255, 1);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #000;
+    --bg-secondary: #1a1a1a;
+    --bg-secondary-hover: #2a2a2a;
+    --bg-button-hover: #0a0a0a;
+    --text-primary: #fff;
+    --text-secondary: #d3d3d3;
+    --text-muted: #94969b;
+    --text-gray: #d3d3d3;
+    --text-placeholder: #666;
+    --border-color: #333;
+    --border-color-input: #444;
+    --modal-overlay: rgba(0, 0, 0, 0.6);
+    --scrollbar-track: #1a1a1a;
+    --scrollbar-thumb: #666;
+    --scrollbar-thumb-hover: #888;
+    --fade-gradient-start: rgba(0, 0, 0, 0);
+    --fade-gradient-end: rgba(0, 0, 0, 1);
+  }
+}

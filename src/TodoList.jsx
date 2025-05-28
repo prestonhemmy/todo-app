@@ -6,16 +6,16 @@ function TodoList() {
     /* Demo tasks */
     const [tasks, setTasks] = useState([
         {id: 1, title: "Make the Bed", completed: true, description: ""},
-        {id: 2, title: "Gardening", completed: true, description: "Water all plants. Pick strawberries if they're ready."},
-        {id: 3, title: "Zoom meeting", completed: true, description: "Company zoom meeting @ 10:00 AM."},
-        {id: 4, title: "Go to the Gym", completed: false, description: "Chest day with Michael at 4:30 PM."},
-        {id: 5, title: "Walk the Dog", completed: false, description: "Walk Snootles around the block."},
-        {id: 6, title: "Dinner Date", completed: false, description: "Pacific Dining Car. 7:00 PM."},
-        {id: 7, title: "Madison's 42ⁿᵈ Birthday Celebration", completed: true, description: "Date: 10/12/2025\nLocation: 1040 NW Florida Ave\nNote to Self: Bring chardonnay and sauvignon blanc."},
-        {id: 8, title: "Book Flight", completed: false, description: "Check for flights to Bali this upcoming weekend."},
-        {id: 9, title: "Finish Kitchen Renovations", completed: false, description: ""},
-        {id: 10, title: "Learn the Guitar", completed: false, description: ""},
+        {id: 2, title: "Walk the Dog", completed: true, description: "Quick walk around the block before work"},
+        {id: 3, title: "Meeting at 10:00 AM", completed: true, description: ""},
+        {id: 4, title: "Haircut", completed: true, description: "5/31/25\n2:30 PM"},
 
+        {id: 5, title: "Meal Prep", completed: false, description: "S: Carnitas Tacos\nM: Chicken and Rice\nT: Carnitas Burrito\nW: Chicken and Rice\nR: Steak and Eggs\nF: Chicken and Potatoes\nS: Pasta Bolognese"},
+        {id: 6, title: "Take out the Trash", completed: false, description: "By 7:00 AM Thursday."},
+        {id: 7, title: "Gym", completed: false, description: "Bench press PR with Brian"},
+        {id: 8, title: "Dentist", completed: false, description: "Root Canal surgery\n4:30 PM\n1358 N Florida Ave"},
+        {id: 9, title: "Update LinkedIn & Resume", completed: false, description: "Update current position and add recent project"},
+        {id: 10, title: "File Taxes", completed: false, description: "H&R Block\n(480) 423-0101"}
     ])
 
     // const [tasks, setTasks] = useState([]);  // NOTE Uncomment for final release
@@ -233,7 +233,7 @@ function TodoList() {
                         </div>
                     )}
 
-                    {/* Show Task Description Modal */}
+                    {/* Task Description Modal */}
                     {isShowingTaskDescription && currentTaskIndex !== null && (
                         <div className="modal-overlay" onClick={closeModals}>
                             <div className="modal" onClick={e => e.stopPropagation()}>

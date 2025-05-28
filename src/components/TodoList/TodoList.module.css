@@ -1,0 +1,146 @@
+.todoList {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 32px 30px 30px;
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  position: relative;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionWrapper {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+  margin-bottom: 0;
+  padding-bottom: 96px;
+}
+
+.section {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar */
+.section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.section::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 4px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+.section::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Fade overlay at bottom of tasks */
+.fadeOverlayBottom {
+  position: absolute;
+  bottom: 64px;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: linear-gradient(to bottom,
+    var(--fade-gradient-start) 0%,
+    var(--fade-gradient-start) 0%,
+    var(--fade-gradient-end) 60%,
+    var(--fade-gradient-end) 100%
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Fade overlay at top of tasks */
+.fadeOverlayTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: linear-gradient(to top,
+    var(--fade-gradient-start) 0%,
+    var(--fade-gradient-start) 0%,
+    var(--fade-gradient-end) 60%,
+    var(--fade-gradient-end) 100%
+  );
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fadeOverlayTop.visible {
+  opacity: 1;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+
+.completedHeader {
+  padding-right: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskList {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: var(--text-placeholder);
+  font-style: italic;
+  padding: 40px 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 32px;
+  left: 0;
+  width: 100%;
+  color: var(--text-gray);
+  text-align: center;
+}
+
+.footerLink {
+  color: #4da4fb;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
